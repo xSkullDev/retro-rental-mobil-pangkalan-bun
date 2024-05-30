@@ -1,0 +1,805 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: auto;
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+/* Navigation styles */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #343a40;
+        z-index: 2;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+section {
+    position: relative;
+    padding: 40px 0;
+}
+
+section.home {
+    text-align: left;
+    padding: 50px 0; /* Optional: set a fallback background color */
+
+}
+
+.home .container {
+    position: relative; /* Ensure the content stays above the background */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .content {
+    flex: 1 1 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency for readability */
+    border-radius: 10px;
+    z-index: 1; /* Ensure the content stays above the background */
+}
+
+.home .image {
+    flex: 1 1 50%;
+    padding: 20px;
+    z-index: +1;
+}
+
+.home .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#title-1 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #d31b22;
+}
+
+#subtitle-1 {
+    font-size: 50px;
+    font-style: bold;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.home .title, .home .subtitle, .home .description {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.feature {
+    flex: 1 1 50%;
+}
+
+.feature-kiri {
+    margin-right: 100px;
+}
+
+.home .feature {
+    display: flex; /* Mengubah tampilan menjadi flexbox */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    text-align: center;
+}
+
+.home .feature img {
+    width: 25px; /* Menyesuaikan lebar gambar */
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.home .feature p {
+    margin-top: 0; /* Menghapus margin atas yang ada secara default */
+}
+
+.home .buttons {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.home .buttons button {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 10px 50px;
+    background-color: #d31b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home .buttons button:hover {
+    background-color: #e04f4f;
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+    .home .content, .home .image {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .home .feature {
+        flex: 1 1 45%;
+    }
+
+    .home .content #subtitle-1 {
+        font-size: 35px;
+    }
+
+    .home .buttons button {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .feature {
+        flex: 1 1 100%;
+    }
+
+    .home .buttons button {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+.home .feature {
+    display: flex; /* Mengubah tampilan menjadi flexbox */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    text-align: center;
+}
+
+.home .feature img {
+    width: 25px; /* Menyesuaikan lebar gambar */
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.home .feature p {
+    margin-top: 0; /* Menghapus margin atas yang ada secara default */
+}
+
+.home .buttons {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.home .buttons button {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 10px 50px;
+    background-color: #d31b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home .buttons button:hover {
+    background-color: #e04f4f;
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+    .home .content, .home .image {
+        flex: 1 1 100%;
+        text-align: left;
+    }
+
+    .home .feature {
+        flex: 1 1 45%;
+    }
+
+    .home .content #subtitle-1 {
+        font-size: 35px;
+    }
+
+    .home .button button {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .feature {
+        flex: 1 1 100%;
+    }
+
+    .home .buttons button {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+section .pricelist {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.pricelist .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-item {
+    flex: 1 1 300px; /* Lebar item disesuaikan */
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambah bayangan untuk efek ketinggian */
+}
+
+.price-item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.price-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.clip-art1, .clip-art2, .clip-art3  {
+    width: 85px;
+}
+
+.panah {
+    width: 55px;
+}
+
+@media (max-width: 768px) {
+    .price-item {
+        flex: 1 1 100%; /* Mengatur agar item memenuhi lebar layar */
+    }
+}
+
+#title-2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #d31b22;
+}
+
+#subtitle-2 {
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.tentang-kami {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.tentang-kami .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tentang-kami .content {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.tentang-kami .content h1 {
+    margin-bottom: 20px;
+}
+
+.tentang-kami .content p {
+    margin-bottom: 20px;
+}
+
+.tentang-kami .content button {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 10px 50px;
+    background-color: #d31b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tentang-kami .content button:hover {
+    background-color: #e04f4f;
+}
+
+.tentang-kami .image {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.tentang-kami .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Aturan Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .tentang-kami .container {
+        flex-direction: column;
+    }
+
+    .tentang-kami .content, .tentang-kami .image {
+        flex: 1 1 100%;
+    }
+
+    .tentang-kami .content button {
+        width: 100%;
+    }
+
+    .tentang-kami .content {
+        order: 2;
+    }
+
+    .tentang-kami .content #subtitle-2 {
+        font-size: 25px;
+    }
+}
+
+#title-3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #d31b22;
+}
+
+#subtitle-3 {
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.alasan {
+    background-color: #fff;
+    text-align: center;
+}
+
+.alasan .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.alasan .content {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.alasan .content h1 {
+    margin-bottom: 20px;
+}
+
+.alasan .content p {
+    margin-bottom: 20px;
+}
+
+.alasan .content button {
+    padding: 10px 20px;
+}
+
+.alasan .image {
+    flex: 1 1 50%;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.alasan .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alasan .content button {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 10px 50px;
+    background-color: #d31b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alasan .content button:hover {
+    background-color: #e04f4f;
+}
+
+@media (max-width: 768px) {
+    .alasan .content button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .alasan .content #subtitle-3 {
+        font-size: 26px;
+    }
+}
+
+.main-content {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.car-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.car h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.car p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.car button {
+    padding: 10px 20px;
+    background-color: #d31b22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.car button:hover {
+    background-color: #e04f4f;
+}
+
+/* Tampilan pada layar dengan lebar maksimum 768px (misalnya, smartphone) */
+@media only screen and (max-width: 768px) {
+    .car {
+      flex: 1 1 100%; /* Mengubah lebar mobil menjadi 100% */
+    }
+  }
+  
+  /* Tampilan pada layar dengan lebar minimum 769px (misalnya, laptop) */
+  @media only screen and (min-width: 769px) {
+    .car-listings {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Menyusun mobil secara merata di antara baris */
+    }
+  
+    .car {
+      flex: 1 1 calc(30% - 20px); /* Mengatur lebar mobil agar tiga mobil muat dalam satu baris */
+    }
+  }
+
+
+/*Tampilan testimoni pelanggan*/  
+#testimoni-pelanggan {
+    text-align: center;
+}
+
+.testimoni {
+    margin-top: 70px;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+#title-4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #d31b22;
+}
+
+#subtitle-4 {
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .testimoni {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #subtitle-4 {
+        font-size: 26px;
+    }
+
+    #testimoni-pelanggan {
+        padding: 0 10px;
+    }
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 40px; /* default padding */
+    box-sizing: border-box;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.slide {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust for gap */
+    margin: 0 10px; /* Add space between slides */
+    box-sizing: border-box;
+    padding: 50px;
+    background: white;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .slide {
+        flex: 0 0 calc(50% - 20px); /* 2 items per view */
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 calc(100% - 20px); /* 1 item per view */
+        margin: 0 10px; /* Add space between slides */
+    }
+
+    .slider {
+        padding: 0 20px;
+    }
+}
+
+/* Tampilan kontak*/
+section .kontak {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.kontak .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hubungi {
+    flex: 1 1 300px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+}
+
+#email {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambah bayangan untuk efek ketinggian */
+}
+
+.nomor {
+    border: 1px solid red;
+}
+
+.hubungi h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hubungi p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.klip1, .klip2, .klip3 {
+    width: 55px;
+}
+
+#email {
+    padding: 45px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.container-footer {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.gambar-footer {
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.hr-footer {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.p-footer {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        padding: 0 20px;
+    }
+
+    .gambar-footer {
+        width: 200px;
+    }
+
+    .hr-footer {
+        width: 90%;
+    }
+
+    .p-footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .container-footer {
+        padding: 0 10px;
+    }
+
+    .gambar-footer {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .hr-footer {
+        width: 100%;
+    }
+
+    .p-footer {
+        font-size: 10px;
+    }
+}

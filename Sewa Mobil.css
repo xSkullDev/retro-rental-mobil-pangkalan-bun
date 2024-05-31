@@ -32,6 +32,7 @@ header {
     width: auto;
     max-height: 40px;
     vertical-align: middle;
+    padding-right: 5px;
 }
 
 /* Navigation styles */
@@ -92,10 +93,6 @@ nav ul li a {
 
     .hamburger {
         display: flex;
-    }
-
-    .logo img {
-        padding-right: 5px;
     }
 }
 

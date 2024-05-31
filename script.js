@@ -81,3 +81,39 @@ function kirimWa4() {
 
     window.open(url, '_blank');
 }
+
+function kirimWa5() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Mobil Wuling Confero. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function kirimWa6() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Mobil Avanzha. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function kirimWa7() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Pick Up. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function kirimWa8() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Honda WRV. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}

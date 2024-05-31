@@ -127,3 +127,22 @@ function hubungi1() {
 
     window.open(url, '_blank');
 }
+
+function hubungi2() {
+    const kontakWa = '+6281545324360';
+    const konsultasi = "Hallo, saya ingin bertanya mengenai layanan Anda.";
+    const encodedMessage = encodeURIComponent(konsultasi);
+    const url = `https://api.whatsapp.com/send?phone=${kontakWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function hubungi3() {
+    const kontakWa = '+6285828171418';
+    const konsultasi = "Hallo, saya ingin bertanya mengenai layanan Anda.";
+    const encodedMessage = encodeURIComponent(konsultasi);
+    const url = `https://api.whatsapp.com/send?phone=${kontakWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+

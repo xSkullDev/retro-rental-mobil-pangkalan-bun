@@ -147,3 +147,23 @@ function hubungi3() {
 }
 
 // Function pop up pesan
+document.addEventListener('DOMContentLoaded', function () {
+    var popup = document.getElementById('popupMessage');
+    var closeButton = document.getElementById('closeButton');
+
+    // Function to show the popup
+    function showPopup() {
+        popup.style.display = 'block';
+    }
+
+    // Function to hide the popup
+    function hidePopup() {
+        popup.style.display = 'none';
+    }
+
+    // Show the popup after 3 seconds
+    setTimeout(showPopup, 3000);
+
+    // Close the popup when the close button is clicked
+    closeButton.addEventListener('click', hidePopup);
+});

@@ -236,6 +236,10 @@ section.home {
         flex: 1 1 100%;
         width: 100%;
     }
+
+    .home .feature img {
+        padding-right: 5px;
+    }
 }
 
 .home .feature {

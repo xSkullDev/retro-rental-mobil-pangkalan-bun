@@ -117,3 +117,13 @@ function kirimWa8() {
 
     window.open(url, '_blank');
 }
+
+// Function menghubungi admin
+function hubungi1() {
+    const kontakWa = '+6285652259623';
+    const konsultasi = "Hallo, saya ingin bertanya mengenai layanan Anda";
+    const encodedMessage = encodeURIComponent(konsultasi);
+    const url = `https://api.whatsapp.com/send?phone=${kontakWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}

@@ -93,10 +93,6 @@ nav ul li a {
     .hamburger {
         display: flex;
     }
-
-    .logo img {
-        padding-right: 5px;
-    }
 }
 
 section {

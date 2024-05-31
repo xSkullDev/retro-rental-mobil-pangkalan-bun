@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function mengirim pesan whatsapp
 function kirimWa() {
-    const nomorWa = '+6282253585053';
-    const pesanSekarang = "tes";
+    const nomorWa = '+6286552259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Mobil Inova Reborn. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
     const encodedMessage = encodeURIComponent(pesanSekarang);
     const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
 

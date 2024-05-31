@@ -121,7 +121,7 @@ function kirimWa8() {
 // Function menghubungi admin
 function hubungi1() {
     const kontakWa = '+6285652259623';
-    const konsultasi = "Hallo, saya ingin bertanya mengenai layanan Anda";
+    const konsultasi = "Hallo, saya ingin bertanya mengenai layanan Anda.";
     const encodedMessage = encodeURIComponent(konsultasi);
     const url = `https://api.whatsapp.com/send?phone=${kontakWa}&text=${encodedMessage}`;
 

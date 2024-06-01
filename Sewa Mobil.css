@@ -820,9 +820,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    display: block; /* Always visible */
+    display: flex; /* Flexbox to align items side by side */
+    align-items: center; /* Vertically align items */
     z-index: 1000;
-    width: 150px;
+    width: auto; /* Adjust width to fit content */
     padding: 10px;
     font-size: 12px;
 }
@@ -830,7 +831,11 @@ body {
 .pop-up-utama p {
     margin: 0;
     padding: 0;
-    text-align: center;
+}
+
+.logo-WA {
+    width: 15px;
+    margin-right: 10px;
 }
 
 /* Responsive Design */
@@ -850,8 +855,4 @@ body {
         width: 250px;
         padding: 8px;
     }
-}
-
-.logo-WA {
-    width: 15px;
 }

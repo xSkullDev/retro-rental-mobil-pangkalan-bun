@@ -150,8 +150,7 @@ function hubungi3() {
 document.addEventListener('DOMContentLoaded', function () {
     var popup = document.getElementById('popupMessage');
     var closeButton = document.getElementById('closeButton');
-    var adminInfo1 = document.getElementById('adminInfo1');
-    var adminInfo2 = document.getElementById('adminInfo2');
+    var adminInfos = document.querySelectorAll('.admin-info');
 
     // Function to show the popup
     function showPopup() {
@@ -160,8 +159,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to hide the admin info sections
     function hideAdminInfo() {
-        adminInfo1.style.display = 'none';
-        adminInfo2.style.display = 'none';
+        adminInfos.forEach(function(adminInfo) {
+            adminInfo.style.display = 'none';
+        });
     }
 
     // Show the popup after 1 second

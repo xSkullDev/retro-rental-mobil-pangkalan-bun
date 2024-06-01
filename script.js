@@ -150,21 +150,12 @@ function hubungi3() {
 // Function pop up utama
 document.addEventListener('DOMContentLoaded', function () {
     var popup = document.getElementById('popUpUtama');
-    var closeButton = document.getElementById('closeButton');
 
     // Function to show the popup
     function showPopup() {
         popup.style.display = 'block';
     }
 
-    // Function to hide the popup
-    function hidePopup() {
-        popup.style.display = 'none';
-    }
-
     // Show the popup after 1 second
     setTimeout(showPopup, 1000);
-
-    // Close the popup when the close button is clicked
-    closeButton.addEventListener('click', hidePopup);
 });

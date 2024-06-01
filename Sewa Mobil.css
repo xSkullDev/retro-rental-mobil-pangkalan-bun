@@ -848,7 +848,7 @@ body {
     display: block; /* Always visible */
     z-index: 1000;
     width: 300px;
-    text-align: center;
+    text-align: right;
     border: 1px solid #ddd;
     padding: 15px;
 }

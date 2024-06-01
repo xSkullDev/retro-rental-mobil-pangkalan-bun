@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'none';
     }
 
-    // Show the popup after 1 seconds
+    // Show the popup after 1 second
     setTimeout(showPopup, 1000);
 
     // Close the popup when the close button is clicked

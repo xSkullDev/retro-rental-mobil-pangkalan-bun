@@ -150,20 +150,23 @@ function hubungi3() {
 document.addEventListener('DOMContentLoaded', function () {
     var popup = document.getElementById('popupMessage');
     var closeButton = document.getElementById('closeButton');
+    var adminInfo1 = document.getElementById('adminInfo1');
+    var adminInfo2 = document.getElementById('adminInfo2');
 
     // Function to show the popup
     function showPopup() {
         popup.style.display = 'block';
     }
 
-    // Function to hide the popup
-    function hidePopup() {
-        popup.style.display = 'none';
+    // Function to hide the admin info sections
+    function hideAdminInfo() {
+        adminInfo1.style.display = 'none';
+        adminInfo2.style.display = 'none';
     }
 
     // Show the popup after 1 second
     setTimeout(showPopup, 1000);
 
-    // Close the popup when the close button is clicked
-    closeButton.addEventListener('click', hidePopup);
+    // Hide the admin info sections when the close button is clicked
+    closeButton.addEventListener('click', hideAdminInfo);
 });

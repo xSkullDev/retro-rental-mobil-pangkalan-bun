@@ -847,8 +847,7 @@ body {
     overflow: hidden;
     display: block; /* Always visible */
     z-index: 1000;
-    width: 300px;
-    text-align: right;
+    width: 100px;
     border: 1px solid #ddd;
     padding: 15px;
 }
@@ -856,6 +855,7 @@ body {
 .pop-up-utama p {
     margin: 0;
     padding: 0;
+    text-align: right;
 }
 
 /* Responsive Design */

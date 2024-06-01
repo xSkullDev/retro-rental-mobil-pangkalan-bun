@@ -811,17 +811,53 @@ footer p {
     bottom: 15px;
     right: 15px;
     display: flex;
+    align-items: center; /* Vertically center the content */
     position: fixed;
     background-color: #00c046;
     color: white;
-    width: 190px;
+    width: auto; /* Adjust width based on content */
+    max-width: 90%; /* Ensure it doesn't exceed screen width */
     text-align: center;
     font-size: 14px;
     padding: 13px 15px;
     border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .logo-WA {
-    width: 15px;
-    margin-right: 5px;
+    width: 20px; /* Slightly larger for better visibility */
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.pop-up-utama p {
+    margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .pop-up-utama {
+        font-size: 12px;
+        padding: 10px 12px;
+        border-radius: 20px;
+    }
+
+    .logo-WA {
+        width: 15px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pop-up-utama {
+        font-size: 10px;
+        padding: 8px 10px;
+        border-radius: 15px;
+    }
+
+    .logo-WA {
+        width: 12px;
+        margin-right: 6px;
+    }
 }

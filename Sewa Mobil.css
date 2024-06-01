@@ -812,7 +812,6 @@ body {
 }
 
 .pop-up-utama {
-    position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: green;
@@ -823,7 +822,7 @@ body {
     display: flex; /* Flexbox to align items side by side */
     align-items: center; /* Vertically align items */
     z-index: 1000;
-    width: auto; /* Adjust width to fit content */
+    width: 50px; /* Adjust width to fit content */
     padding: 10px;
     font-size: 12px;
 }

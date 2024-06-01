@@ -807,30 +807,21 @@ footer p {
 
 /* Responsive Design */
 /* Pop Up Utama*/
-body {
-    font-family: Arial, sans-serif;
-}
-
 .pop-up-utama {
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    position: fixed;
+    background-color: #00c548;
+    color: white;
+    width: 190px;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px 15px;
+    border-radius: 25px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .pop-up-utama {
-        bottom: 10px;
-        right: 10px;
-        width: 300px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pop-up-utama {
-        bottom: 10px;
-        right: 10px;
-        width: 250px;
-        padding: 8px;
-    }
+.logo-WA {
+    width: 15px;
+    margin-right: 5px;
 }

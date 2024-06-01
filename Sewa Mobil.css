@@ -847,7 +847,8 @@ body {
     overflow: hidden;
     display: block; /* Always visible */
     z-index: 1000;
-    width: 350px;
+    width: 300px;
+    text-align: center;
     border: 1px solid #ddd;
     padding: 15px;
 }

@@ -147,26 +147,15 @@ function hubungi3() {
 }
 
 // Function pop up pesan
+// Function pop up utama
 document.addEventListener('DOMContentLoaded', function () {
-    var popup = document.getElementById('popupMessage');
-    var closeButton = document.getElementById('closeButton');
-    var adminInfos = document.querySelectorAll('.admin-info');
+    var popup = document.getElementById('popUpUtama');
 
     // Function to show the popup
     function showPopup() {
         popup.style.display = 'block';
     }
 
-    // Function to hide the admin info sections
-    function hideAdminInfo() {
-        adminInfos.forEach(function(adminInfo) {
-            adminInfo.style.display = 'none';
-        });
-    }
-
     // Show the popup after 1 second
     setTimeout(showPopup, 1000);
-
-    // Hide the admin info sections when the close button is clicked
-    closeButton.addEventListener('click', hideAdminInfo);
 });

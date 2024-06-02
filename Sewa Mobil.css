@@ -861,3 +861,85 @@ footer p {
         margin-right: 6px;
     }
 }
+
+/* Tampilan Pop-Up Pesan */
+.pop-up-isi {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 80px; /* Adjust as necessary to place above pop-up-utama */
+    right: 20px; /* Align with the right side of pop-up-utama */
+    background-color: white;
+    z-index: 1000;
+    width: 310px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.pop-up-utama {
+    cursor: pointer; /* Indicates that it is clickable */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    background-color: #00c046;;
+    border-radius: 10px;
+}
+
+.pop-up-utama img {
+    margin-right: 10px;
+}
+
+#isi-paragraf-pop-up {
+    background-color: #00c046;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#admin1 {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#admin1 .gambar-admin1 {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#admin2 {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#admin2 .gambar-admin2 {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#admin3 {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#admin3 .gambar-admin3 {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}

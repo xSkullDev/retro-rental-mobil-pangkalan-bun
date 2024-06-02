@@ -163,8 +163,12 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function() {
     const popUpUtama = document.querySelector('.pop-up-utama');
     const popUpIsi = document.querySelector('.pop-up-isi');
-    
+
     popUpUtama.addEventListener('click', function() {
-        popUpIsi.style.display = 'block';
+        if (popUpIsi.style.display === 'block') {
+            popUpIsi.style.display = 'none'; // Hide the pop-up-isi div
+        } else {
+            popUpIsi.style.display = 'block'; // Show the pop-up-isi div
+        }
     });
 });

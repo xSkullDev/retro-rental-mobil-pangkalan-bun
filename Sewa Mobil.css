@@ -932,3 +932,137 @@ footer p {
     padding: 10px;
     border-radius: 5px 5px 0 0;
 }
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .pop-up-isi {
+        width: 90%; /* Adjust width for smaller screens */
+        bottom: 50px; /* Adjust position for smaller screens */
+        right: 5%; /* Center align on small screens */
+    }
+
+    .pop-up-utama {
+        width: 90%; /* Adjust width for smaller screens */
+        bottom: 10px; /* Adjust position for smaller screens */
+        right: 5%; /* Center align on small screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+        border-radius: 30px; /* Slightly less rounded for smaller screens */
+    }
+
+    .judul-pop-up {
+        font-size: 8px; /* Adjust font size for smaller screens */
+    }
+
+    .isi-pop-up {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .keterangan-pop-up {
+        font-size: 11px; /* Adjust font size for smaller screens */
+    }
+
+    #admin {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    #admin .gambar-admin {
+        width: 50px; /* Adjust image size */
+        margin-bottom: 10px; /* Add margin to separate elements */
+    }
+
+    #isi-paragraf-pop-up {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+/* Medium devices (tablets, 600px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .pop-up-isi {
+        width: 80%; /* Adjust width for medium screens */
+        bottom: 60px; /* Adjust position for medium screens */
+        right: 10%; /* Center align on medium screens */
+    }
+
+    .pop-up-utama {
+        width: 80%; /* Adjust width for medium screens */
+        bottom: 15px; /* Adjust position for medium screens */
+        right: 10%; /* Center align on medium screens */
+        padding: 9px; /* Adjust padding for medium screens */
+        border-radius: 40px; /* Adjust border radius for medium screens */
+    }
+
+    .judul-pop-up {
+        font-size: 9px; /* Adjust font size for medium screens */
+    }
+
+    .isi-pop-up {
+        font-size: 14px; /* Adjust font size for medium screens */
+    }
+
+    .keterangan-pop-up {
+        font-size: 12px; /* Adjust font size for medium screens */
+    }
+
+    #admin {
+        flex-direction: row; /* Align elements in a row */
+        align-items: center; /* Center align items */
+        padding: 8px; /* Adjust padding */
+    }
+
+    #admin .gambar-admin {
+        width: 55px; /* Adjust image size */
+        margin-right: 8px; /* Adjust margin */
+    }
+
+    #isi-paragraf-pop-up {
+        font-size: 13px; /* Adjust font size */
+    }
+}
+
+/* Large devices (desktops, 768px and above) */
+@media (min-width: 769px) {
+    .pop-up-isi {
+        width: 300px; /* Default width */
+        bottom: 75px; /* Default position */
+        right: 20px; /* Default position */
+    }
+
+    .pop-up-utama {
+        width: auto; /* Default width */
+        bottom: 20px; /* Default position */
+        right: 20px; /* Default position */
+        padding: 10px; /* Default padding */
+        border-radius: 50px; /* Default border radius */
+    }
+
+    .judul-pop-up {
+        font-size: 10px; /* Default font size */
+    }
+
+    .isi-pop-up {
+        font-size: 15px; /* Default font size */
+    }
+
+    .keterangan-pop-up {
+        font-size: 13px; /* Default font size */
+    }
+
+    #admin {
+        flex-direction: row; /* Default row alignment */
+        align-items: center; /* Default center alignment */
+        padding: 5px; /* Default padding */
+    }
+
+    #admin .gambar-admin {
+        width: 60px; /* Default image size */
+        margin-right: 10px; /* Default margin */
+    }
+
+    #isi-paragraf-pop-up {
+        font-size: 13px; /* Default font size */
+    }
+}

@@ -174,8 +174,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Function mengirim pesan otomatis ke admin
-function adminOtomatis() {
+function adminOtomatis1() {
     const nomorWa = "+6285652259623";
+    const isiPesan = "Hallo, saya ingin bertanya mengenai layanan Anda.";
+    const encodedMessage = encodeURIComponent(isiPesan);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function adminOtomatis2() {
+    const nomorWa = "+6281545324360";
+    const isiPesan = "Hallo, saya ingin bertanya mengenai layanan Anda.";
+    const encodedMessage = encodeURIComponent(isiPesan);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function adminOtomatis3() {
+    const nomorWa = "+6285828171418";
     const isiPesan = "Hallo, saya ingin bertanya mengenai layanan Anda.";
     const encodedMessage = encodeURIComponent(isiPesan);
     const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;

@@ -894,70 +894,6 @@ footer p {
     margin-right: 10px;
 }
 
-#isi-paragraf-pop-up {
-    background-color: #00c046;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px 5px 0 0; /* Border radius pada sudut atas */
-}
-
-#admin1 {
-    background-color:white;
-    color: black;
-    display: flex;
-    align-items: center;
-    border-radius: 0 0 5px 5px; /* Border radius pada sudut bawah */
-    padding-top: 20px;
-    padding-left: 5px;
-}
-
-#admin1 .gambar-admin1 {
-    width: 80px;
-    border-radius: 5px; /* Border radius pada gambar */
-    padding-right: 5px;
-}
-
-#admin2 {
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 5px; /* Border radius pada semua sudut */
-}
-
-#admin2 .gambar-admin2 {
-    width: 70px;
-    margin-right: 10px;
-    border-radius: 5px; /* Border radius pada gambar */
-}
-
-#admin3 {
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 5px; /* Border radius pada semua sudut */
-}
-
-#admin3 .gambar-admin3 {
-    width: 70px;
-    margin-right: 10px;
-    border-radius: 5px; /* Border radius pada gambar */
-}
-
-#isi-paragraf-pop-up {
-    font-size: 13px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.div-admin {
-    margin-bottom: 13px;
-}
-
 .judul-pop-up {
     font-size: 10px;
 }
@@ -969,4 +905,30 @@ footer p {
 
 .keterangan-pop-up {
     font-size: 13px;
+}
+
+#admin {
+    background-color:white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 5px 5px; /* Border radius pada sudut bawah */
+    padding-top: 5px;
+}
+
+#admin .gambar-admin {
+    width: 60px;
+    border-radius: 5px; /* Border radius pada gambar */
+    padding-right: 5px;
+}
+
+#isi-paragraf-pop-up {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #00c046;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
 }

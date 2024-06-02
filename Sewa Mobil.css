@@ -866,7 +866,7 @@ footer p {
 .pop-up-isi {
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 75px; /* Adjust as necessary to place above pop-up-utama */
+    bottom: 65px; /* Adjust as necessary to place above pop-up-utama */
     right: 20px; /* Align with the right side of pop-up-utama */
     background-color: white;
     z-index: 1000;

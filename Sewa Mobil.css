@@ -866,28 +866,28 @@ footer p {
 .pop-up-isi {
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 80px; /* Adjust as necessary to place above pop-up-utama */
+    bottom: 75px; /* Adjust as necessary to place above pop-up-utama */
     right: 20px; /* Align with the right side of pop-up-utama */
     background-color: white;
     z-index: 1000;
-    width: 310px;
-    border-radius: 10px;
+    width: 320px;
     padding: 0;
     margin: 0;
+    border-radius: 5px; /* Border radius 5px pada semua sudut */
+    border: 1.5px solid #00c046;
 }
 
 .pop-up-utama {
     cursor: pointer; /* Indicates that it is clickable */
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     bottom: 20px; /* Adjust as necessary */
     right: 20px; /* Adjust as necessary */
-    background-color: #00c046;;
-    border-radius: 10px;
+    background-color: #00c046;
+    border-radius: 50px; /* Border radius 5px pada semua sudut */
 }
 
 .pop-up-utama img {
@@ -899,21 +899,21 @@ footer p {
     color: white;
     text-align: center;
     padding: 10px;
+    border-radius: 5px 5px 0 0; /* Border radius pada sudut atas */
 }
-
 
 #admin1 {
     background-color: white;
     color: black;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    border-radius: 0 0 5px 5px; /* Border radius pada sudut bawah */
 }
 
 #admin1 .gambar-admin1 {
-    width: 30px;
+    width: 70px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 5px; /* Border radius pada gambar */
 }
 
 #admin2 {
@@ -922,12 +922,13 @@ footer p {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    border-radius: 5px; /* Border radius pada semua sudut */
 }
 
 #admin2 .gambar-admin2 {
-    width: 30px;
+    width: 70px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 5px; /* Border radius pada gambar */
 }
 
 #admin3 {
@@ -936,10 +937,17 @@ footer p {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    border-radius: 5px; /* Border radius pada semua sudut */
 }
 
 #admin3 .gambar-admin3 {
-    width: 30px;
+    width: 70px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 5px; /* Border radius pada gambar */
+}
+
+#isi-paragraf-pop-up {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

@@ -160,3 +160,11 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(showPopup, 1000);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const popUpUtama = document.querySelector('.pop-up-utama');
+    const popUpIsi = document.querySelector('.pop-up-isi');
+    
+    popUpUtama.addEventListener('click', function() {
+        popUpIsi.style.display = 'block';
+    });
+});

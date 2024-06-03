@@ -13,8 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('show');
         });
     });
+    
+    document.addEventListener('click', (event) => {
+        if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+            navLinks.classList.remove('show');
+        }
+    });
 });
-
 
 // Function tampilan Slide bergerak
 document.addEventListener('DOMContentLoaded', () => {
@@ -164,11 +169,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const popUpUtama = document.querySelector('.pop-up-utama');
     const popUpIsi = document.querySelector('.pop-up-isi');
 
-    popUpUtama.addEventListener('click', function() {
+    popUpUtama.addEventListener('click', function(event) {
         if (popUpIsi.style.display === 'block') {
             popUpIsi.style.display = 'none'; // Hide the pop-up-isi div
         } else {
             popUpIsi.style.display = 'block'; // Show the pop-up-isi div
+        }
+        event.stopPropagation(); // Prevent click event from bubbling up to the document
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!popUpIsi.contains(event.target) && !popUpUtama.contains(event.target)) {
+            popUpIsi.style.display = 'none'; // Hide the pop-up-isi div
         }
     });
 });

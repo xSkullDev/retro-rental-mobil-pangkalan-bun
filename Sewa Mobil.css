@@ -135,6 +135,7 @@ section.home {
     flex: 1 1 50%;
     padding: 20px;
     z-index: +1;
+    border: 10px solid red;
 }
 
 .home .image img {
@@ -508,6 +509,7 @@ section .pricelist {
 .alasan .image img {
     max-width: 100%;
     height: auto;
+    border: 10px solid red;
 }
 
 .alasan .content button {

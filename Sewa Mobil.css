@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: black;
+    background-color: #343a40;
     color: #fff;
     padding: 20px 0;
     position: fixed;
@@ -86,7 +86,7 @@ nav ul li a {
         top: 60px;
         left: 0;
         right: 0;
-        background-color: black;
+        background-color: #343a40;
         z-index: 2;
     }
 

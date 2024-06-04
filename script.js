@@ -212,3 +212,19 @@ function adminOtomatis3() {
 
     window.open(url, '_blank');
 }
+
+
+
+
+
+
+
+
+
+document.getElementById('view-map').addEventListener('click', function() {
+    // URL Google Maps dengan koordinat lokasi kantor
+    var mapUrl = `https://www.google.com/maps?q=${-6.984097010065898},${110.41686002393075}`;
+
+    // Membuka URL di tab baru
+    window.open(mapUrl, '_blank');
+});

@@ -942,3 +942,43 @@ footer p {
     padding: 10px;
     border-radius: 5px 5px 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+.location-div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.location-div h2 {
+    margin-top: 0;
+}
+
+.location-div p {
+    margin: 10px 0;
+}
+
+.location-div button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.location-div button:hover {
+    background-color: #357ae8;
+}

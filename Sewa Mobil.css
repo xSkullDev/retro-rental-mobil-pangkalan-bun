@@ -144,6 +144,10 @@ section.home {
     border-radius: 10px;
 }
 
+.layanan {
+    margin-bottom: 20px;
+}
+
 #title-1 {
     font-size: 15px;
     margin-bottom: 15px;
@@ -217,23 +221,13 @@ section.home {
 
 /* Additional responsive styles */
 @media (max-width: 768px) {
-    .home .content, .home .image {
-        flex: 1 1 100%;
-        text-align: left;
-    }
-
     .home .feature {
-        flex: 1 1 45%;
-    }
-
-    .home .content #subtitle-1 {
-        font-size: 35px;
+        flex: 1 1 100%;
     }
 
     .home .buttons button {
-        padding: 10px 20px;
+        flex: 1 1 100%;
         width: 100%;
-        box-sizing: border-box;
     }
 }
 
@@ -529,16 +523,7 @@ section .pricelist {
     background-color: #e04f4f;
 }
 
-@media (max-width: 768px) {
-    .alasan .content button {
-        width: 100%;
-        margin: 5px 0;
-    }
 
-    .alasan .content #subtitle-3 {
-        font-size: 26px;
-    }
-}
 
 .main-content {
     background-color: #f8f9fa;

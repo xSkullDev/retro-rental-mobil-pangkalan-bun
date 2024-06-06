@@ -662,6 +662,45 @@ section .pricelist {
     line-height: 1.5;
 }
 
+.slide-gambar {
+    width: 50px;  /* Lebar container */
+    height: 50px; /* Tinggi container */
+    overflow: hidden; /* Untuk memastikan gambar tidak keluar dari container */
+    display: flex; /* Untuk memusatkan gambar */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    border-radius: 50%; /* Membuat container menjadi lingkaran */
+    border: 1px solid red;
+}
+
+.container-pegawai {
+    display: flex;
+    align-items: center; /* Untuk menyelaraskan gambar dan teks di tengah secara vertikal */
+    gap: 20px; /* Memberikan jarak antara gambar dan teks */
+    padding-left: 95px;
+    padding-top: 20px;
+}
+
+.profile-pegawai {
+    text-align: left;
+    font-style: normal;
+}
+
+.nama-pegawai {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jabatan {
+    font-size: 15px;
+}
+
+.isi-slide {
+    margin-bottom: 20px;
+}
+
+
+
 /* Responsive design */
 @media (max-width: 1024px) {
     .slide {
@@ -677,6 +716,37 @@ section .pricelist {
 
     .slider {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-pegawai {
+        gap: 10px;
+    }
+
+    .slide-gambar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nama-pegawai, .jabatan {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-pegawai {
+        gap: 10px;
+        padding-left: 40px;
+    }
+
+    .slide-gambar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nama-pegawai, .jabatan {
+        font-size: 0.8em;
     }
 }
 

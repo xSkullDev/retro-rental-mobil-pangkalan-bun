@@ -249,11 +249,12 @@ section.home {
 }
 
 .home .feature img {
-    width: 25px; /* Menyesuaikan lebar gambar */
+    width: 30px; /* Menyesuaikan lebar gambar */
     height: auto;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 5px;
+    margin-left: 0;
 }
 
 .home .feature p {
@@ -764,7 +765,7 @@ footer p {
     }
 
     .gambar-footer {
-        width: 200px;
+        width: 320px;
     }
 
     .hr-footer {
@@ -788,7 +789,7 @@ footer p {
 
     .gambar-footer {
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .hr-footer {

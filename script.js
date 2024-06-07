@@ -151,6 +151,10 @@ function hubungi3() {
     window.open(url, '_blank');
 }
 
+function hubungi4() {
+    window.open("email.html", "_blank");
+}
+
 // Function pop up pesan
 // Function pop up utama
 document.addEventListener('DOMContentLoaded', function () {
@@ -212,9 +216,3 @@ function adminOtomatis3() {
 
     window.open(url, '_blank');
 }
-
-// Function untuk membuka tab baru pada email
-document.getElementById("email").addEventListener("click", function() {
-    window.open("email.html", "_blank");
-});
-

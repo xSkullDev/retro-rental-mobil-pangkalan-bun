@@ -755,12 +755,13 @@ section .kontak {
 
 .kontak .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Mengatur jarak antara div secara merata */
     flex-wrap: wrap;
 }
 
 .hubungi {
-    width: 25vw;
+    flex: 1 1 20%; /* Menetapkan ukuran div menjadi 30% dari lebar container */
+    max-width: 300px; /* Menetapkan lebar maksimum untuk div */
     margin: 10px;
     border-radius: 5px;
     text-align: center;
@@ -786,15 +787,15 @@ section .kontak {
     width: 55px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .hubungi {
-        width: calc(100% - 20px); /* Satu div per baris */
+        flex: 1 1 100%; /* Mengubah ukuran div saat tampilan laptop */
     }
 }
 
 @media (max-width: 480px) {
     .hubungi {
-        width: calc(100% - 20px); /* Satu div per baris */
+        flex: 1 1 100%; /* Mengubah ukuran div saat tampilan pada perangkat mobile */
     }
 }
 
@@ -999,42 +1000,3 @@ footer p {
     border-radius: 5px 5px 0 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.location-div {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.location-div h2 {
-    margin-top: 0;
-}
-
-.location-div p {
-    margin: 10px 0;
-}
-
-.location-div button {
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.location-div button:hover {
-    background-color: #357ae8;
-}

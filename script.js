@@ -212,3 +212,4 @@ function adminOtomatis3() {
 
     window.open(url, '_blank');
 }
+

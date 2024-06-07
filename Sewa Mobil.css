@@ -760,15 +760,11 @@ section .kontak {
 }
 
 .hubungi {
-    flex: 1 1 300px;
+    width: 25vw;
     margin: 10px;
     border-radius: 5px;
     text-align: center;
     padding: 25px;
-}
-
-#email {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambah bayangan untuk efek ketinggian */
 }
 
 .nomor {
@@ -790,10 +786,17 @@ section .kontak {
     width: 55px;
 }
 
-#email {
-    padding: 45px;
+@media (min-width: 768px) {
+    .hubungi {
+        width: calc(100% - 20px); /* Satu div per baris */
+    }
 }
 
+@media (max-width: 480px) {
+    .hubungi {
+        width: calc(100% - 20px); /* Satu div per baris */
+    }
+}
 
 /* Footer */
 footer {

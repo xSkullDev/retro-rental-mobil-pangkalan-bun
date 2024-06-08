@@ -22,45 +22,18 @@
             padding: 8px;
         }
     </style>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        const namaLengkap = document.getElementById("namaLengkap");
-        const email = document.getElementById("email");
-        const nomorHp = document.getElementById("nomorHp");
-        const subject = document.getElementById("subject");
-        const pesan = document.getElementById("pesan");
-
-        function kirimEmail() {
-            const pesanfull = 'Nama Lengkap : ${namaLengkap.value}<br> Email : ${email.value}<br> Nomor Hp : ${nomorHp.value}<br> Pesan : ${pesan.value}';
-
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "x.skull.dev@gmail.com",
-            Password : "81ABC343CFD7475EA0AF5B904D08C04F813C",
-            To : 'x.skull.dev@gmail.com',
-            From : "x.skull.dev@gmail.com",
-            Subject : subject.value,
-            Body : pesanfull
-            }).then(
-                message => alert(message)
-            );
-        };
-
-        form.addEventListener("submit", (e) =>{
-            e. preventDefault();
-
-            kirimEmail();
-        });
+        
     </script>
 </head>
 <body>
     <form>
         <h1>Masukkan Data Diri Anda</h1>
-        <input type="text" id="namaLengkap" placeholder="Nama Lengkap" required></br>
-        <input type="email" id="email" placeholder="Alamat Email Anda" required></br>
-        <input type="tel" id="nomorHp" placeholder="Nomor Hp" required></br>
-        <input type="text" id="subject" placeholder="Subject" required></br>
-        <textarea id="pesan" placeholder="Isi Pesan" required></textarea></br>
+        <input type="text" id="namaLengkap" placeholder="Nama Lengkap"></br>
+        <input type="email" id="email" placeholder="Alamat Email Anda"></br>
+        <input type="tel" id="nomorHp" placeholder="Nomor Hp"></br>
+        <input type="text" id="subject" placeholder="Subject"></br>
+        <textarea id="pesan" placeholder="Isi Pesan"></textarea></br>
         <button onclick="kirimEmail()">Kirim</button>
     </form>
 </body>

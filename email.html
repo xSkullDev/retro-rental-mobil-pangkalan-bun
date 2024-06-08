@@ -24,9 +24,15 @@
     </style>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        const form = document.querySelector('form');
+        const namaLengkap = document.getElementById("namaLengkap");
+        const email = document.getElementById("email");
+        const nomorHp = document.getElementById("nomorHp");
+        const subject = document.getElementById("subject");
+        const pesan = document.getElementById("pesan");
 
         function kirimEmail() {
+            const pesanfull = 'Nama Lengkap : ${namaLengkap.value}<br> Email : ${email.value}<br> Nomor Hp : ${nomorHp.value}<br> Pesan : ${pesan.value}';
+
             Email.send({
             Host : "smtp.elasticemail.com",
             Username : "x.skull.dev@gmail.com",
@@ -34,7 +40,7 @@
             To : 'x.skull.dev@gmail.com',
             From : "x.skull.dev@gmail.com",
             Subject : "This is the subject",
-            Body : "And this is the body"
+            Body : pesanfull
             }).then(
                 message => alert(message)
             );

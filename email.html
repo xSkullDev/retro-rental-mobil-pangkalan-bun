@@ -27,14 +27,14 @@
     </script>
 </head>
 <body>
-    <form>
+    <form action="email.php" method="post">
         <h1>Masukkan Data Diri Anda</h1>
-        <input type="text" id="namaLengkap" placeholder="Nama Lengkap"></br>
-        <input type="email" id="email" placeholder="Alamat Email Anda"></br>
-        <input type="tel" id="nomorHp" placeholder="Nomor Hp"></br>
-        <input type="text" id="subject" placeholder="Subject"></br>
-        <textarea id="pesan" placeholder="Isi Pesan"></textarea></br>
-        <button>Kirim</button>
+        <input type="text" id="namaLengkap" name="namaLengkap" placeholder="Nama Lengkap" required><br>
+        <input type="email" id="email" name="email" placeholder="Alamat Email Anda" required><br>
+        <input type="tel" id="nomorHp" name="nomorHp" placeholder="Nomor Hp" required><br>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+        <textarea id="pesan" name="pesan" placeholder="Isi Pesan" required></textarea><br>
+        <button type="submit">Kirim</button>
     </form>
 </body>
 </html>

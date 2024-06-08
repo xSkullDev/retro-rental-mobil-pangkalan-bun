@@ -152,7 +152,7 @@ function hubungi3() {
 }
 
 function hubungi4() {
-    window.open("Email.html", "_blank");
+    window.open("Form\index.html", "_blank");
 }
 
 // Function pop up pesan

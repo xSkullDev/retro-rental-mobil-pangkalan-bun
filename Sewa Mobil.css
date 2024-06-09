@@ -787,11 +787,7 @@ section .kontak {
     width: 55px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+
 
 @media (max-width: 768px) {
     .hubungi {

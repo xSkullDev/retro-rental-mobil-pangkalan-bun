@@ -216,3 +216,7 @@ function adminOtomatis3() {
 
     window.open(url, '_blank');
 }
+
+document.getElementById('contactDiv').addEventListener('click', function() {
+    window.open('https://soft-footed-deputie.000webhostapp.com/index.html', '_blank');
+});

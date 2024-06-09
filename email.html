@@ -25,6 +25,22 @@
     </style>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Form successfully submitted');
+        }, function(error) {
+                console.error('FAILED...', error);
+            });
+        });
+
+
+
+        
+
         (function(){
            emailjs.init('syahrifan'); // Ganti dengan User ID dari EmailJS
         })();
@@ -38,8 +54,8 @@
             alert('Form successfully submitted');
         }, function(error) {
             console.error('FAILED...', error);
-            });
         });
+});
      </script>
 </head>
 <body>

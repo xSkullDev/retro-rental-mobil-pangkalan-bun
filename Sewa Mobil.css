@@ -787,6 +787,27 @@ section .kontak {
     width: 55px;
 }
 
+a {
+    text-decoration: none; /* Menghilangkan garis bawah default */
+    color: inherit; /* Menggunakan warna teks dari elemen dalamnya */
+    display: block; /* Memastikan bahwa elemen <a> mengambil seluruh ruang dari div */
+}
+
+a .hubungi.nomor {
+    display: flex; /* Jika Anda menggunakan Flexbox untuk tata letak */
+    align-items: center; /* Untuk mengatur item secara vertikal jika diperlukan */
+    justify-content: center; /* Untuk mengatur item secara horizontal jika diperlukan */
+}
+
+a .hubungi.nomor img {
+    max-width: 100%; /* Pastikan gambar tidak melampaui ukuran div */
+}
+
+a .hubungi.nomor h1, a .hubungi.nomor p {
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
 @media (max-width: 768px) {
     .hubungi {
         flex: 1 1 100%; /* Mengubah ukuran div saat tampilan laptop */

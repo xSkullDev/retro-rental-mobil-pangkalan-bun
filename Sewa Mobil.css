@@ -815,11 +815,11 @@ footer {
 }
 .gambar-footer {
     width: 500px;
-    margin-bottom: 50px;
 }
 
 .hr-footer {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 footer p {

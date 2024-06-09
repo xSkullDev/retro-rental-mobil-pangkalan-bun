@@ -23,13 +23,28 @@
             padding: 8px;
         }
     </style>
-    <script>
-        
-    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('syahrifan'); // Ganti dengan User ID dari EmailJS
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_llibn4r', 'template_e4esiin', this)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Form successfully submitted');
+        }, function(error) {
+            console.error('FAILED...', error);
+            });
+        });
+     </script>
 </head>
 <body>
     <form action="email.php" method="post">
-        <h1>Masukkan Data Diri Anda</h1>
+        <h3>Masukkan Data Diri Anda</h3>
         <input type="text" id="namaLengkap" name="namaLengkap" placeholder="Nama Lengkap" required><br>
         <input type="email" id="email" name="email" placeholder="Alamat Email Anda" required><br>
         <input type="tel" id="nomorHp" name="nomorHp" placeholder="Nomor Hp" required><br>

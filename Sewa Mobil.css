@@ -573,10 +573,6 @@ section .pricelist {
     background-color: #e04f4f;
 }
 
-.tipe {
-    font-weight: bold;
-}
-
 /* Tampilan pada layar dengan lebar maksimum 768px (misalnya, smartphone) */
 @media only screen and (max-width: 768px) {
     .car {

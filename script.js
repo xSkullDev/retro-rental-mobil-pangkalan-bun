@@ -123,6 +123,15 @@ function kirimWa8() {
     window.open(url, '_blank');
 }
 
+function kirimWa9() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Toyota Calya. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
 // Function menghubungi admin
 function hubungi1() {
     const kontakWa = '+6285652259623';

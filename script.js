@@ -252,3 +252,9 @@ function adminOtomatis3() {
 
     window.open(url, '_blank');
 }
+
+// Function Maps
+document.getElementById('lokasi').addEventListener('click', function() {
+    const googleMaps = "https://www.google.com/maps/place/Asrama+IPMK+Semarang/@-6.984326,110.4142744,17z/data=!3m1!4b1!4m6!3m5!1s0x2e708b4118d1a461:0xa3ad6786ec5a3efd!8m2!3d-6.9843313!4d110.4168493!16s%2Fg%2F11h2fmd2vq?entry=ttu";
+    window.open(googleMaps, '_blank');
+})

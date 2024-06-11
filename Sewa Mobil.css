@@ -783,13 +783,8 @@ section .kontak {
     margin-bottom: 10px;
 }
 
-.klip1, .klip2, .klip3 {
+.klip1, .klip2, .klip3, .klip4{
     width: 55px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 @media (max-width: 768px) {

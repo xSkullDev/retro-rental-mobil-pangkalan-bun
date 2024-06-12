@@ -98,7 +98,7 @@ function kirimWa5() {
 
 function kirimWa6() {
     const nomorWa = '+6285652259623';
-    const pesanSekarang = "Hallo, saya ingin memesan Mobil Avanzha. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const pesanSekarang = "Hallo, saya ingin memesan Mobil Avanza. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
     const encodedMessage = encodeURIComponent(pesanSekarang);
     const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
 
@@ -153,6 +153,15 @@ function kirimWa11() {
 function kirimWa12() {
     const nomorWa = '+6285652259623';
     const pesanSekarang = "Hallo, saya ingin memesan All New Avanza. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
+    const encodedMessage = encodeURIComponent(pesanSekarang);
+    const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+}
+
+function kirimWa13() {
+    const nomorWa = '+6285652259623';
+    const pesanSekarang = "Hallo, saya ingin memesan Innova. Bisakah Anda memberikan saya informasi tentang mobil yang tersedia?";
     const encodedMessage = encodeURIComponent(pesanSekarang);
     const url = `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodedMessage}`;
 
